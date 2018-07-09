@@ -1,4 +1,4 @@
-dont need this serializer right now
+# dont need this serializer right now
 
 class GameSerializer < ActiveModel::Serializer
   attributes :id, :score

@@ -7,12 +7,23 @@ class Api::V1::GamesController < ApplicationController
   end
 
   def create
-
+    # byebug
+    @game = Game.create(game_params)
   end
 
   def show
     @game = Game.find(params[:id])
     render json: @game.to_json(include: :user)
+  end
+
+  private
+
+  def game_params
+    params.permit(:user_id, :score)
+  end
+
+  def find_game
+    @game = Game.find(params[:id])
   end
 
 end
