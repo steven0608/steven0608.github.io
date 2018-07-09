@@ -1,11 +1,13 @@
-class Api::V1::GamesController < ApplicationController
+#don't need this API right now
 
-  def index
-    @games=Game.all
-    render json: @games.to
-  end
-
-  def create
-
-  end
-end
+# class Api::V1::GamesController < ApplicationController
+#
+#   def index
+#     @games=Game.all
+#     render json: @games
+#   end
+#
+#   def create
+#
+#   end
+# end
