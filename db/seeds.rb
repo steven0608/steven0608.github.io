@@ -5,20 +5,3 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-
-User.destroy_all
-Game.destroy_all
-User.create(name: "Matt")
-User.create(name: "Steven")
-
-Game.create(user_id: 1, score: 10)
-Game.create(user_id: 1, score: 150)
-Game.create(user_id: 1, score: 30)
-Game.create(user_id: 1, score: 70)
-
-
-Game.create(user_id: 2, score: 50)
-Game.create(user_id: 2, score: 170)
-Game.create(user_id: 2, score: 40)
-Game.create(user_id: 2, score: 90)
