@@ -7,7 +7,6 @@ class Api::V1::GamesController < ApplicationController
   end
 
   def create
-    # byebug
     @game = Game.create(game_params)
   end
 
